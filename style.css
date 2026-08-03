@@ -1,0 +1,57 @@
+body {
+    background-color: turquoise;
+}
+
+.hud {
+    display: grid;
+    position: relative;
+    gap: 5px;
+    width: 200px;
+    top: 50px;
+    left: 40%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hud::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    background: rgba(255, 255, 255, 0.30);
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.hud>* {
+    position: relative;
+    z-index: 1;
+    margin: 1px;
+}
+
+
+.input::placeholder {
+    position: relative;
+    left: 30%;
+}
+
+.input {
+    position: relative;
+    left: 7px;
+    height: 20px;
+    width: 180px;
+}
+
+h1 {
+    position: relative;
+    left: 7px;
+    margin-top: 5px;
+    font-size: 40px;
+}
+
+.buttongroup {
+    position: relative;
+    margin: 5px;
+    left: 15px;
+}
