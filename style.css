@@ -55,3 +55,31 @@ h1 {
     margin: 5px;
     left: 15px;
 }
+
+.listed {
+    display: grid;
+    position: relative;
+    gap: 5px;
+    width: fit-content;
+    top: 60px;
+    left: 503px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.listed::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    background: rgba(255, 255, 255, 0.30);
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.listed>* {
+    position: relative;
+    z-index: 5;
+    margin: 1px;
+}
