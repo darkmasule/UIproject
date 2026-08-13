@@ -1,7 +1,7 @@
-body {
-    background-color: turquoise;
-}
 
+body {
+    background: linear-gradient(-45deg, skyblue, white, skyblue) no-repeat fixed;
+}
 .hud {
     display: grid;
     position: relative;
@@ -19,7 +19,7 @@ body {
     inset: 0;
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    background: rgba(255, 255, 255, 0.30);
+    background: rgba(0, 255, 255, 0.162);
     z-index: 0;
     border-radius: 10px;
 }
@@ -53,33 +53,40 @@ h1 {
 .buttongroup {
     position: relative;
     margin: 5px;
-    left: 15px;
+    left: 34px;
 }
 
-.listed {
+.registerpanel {
     display: grid;
-    position: relative;
-    gap: 5px;
-    width: fit-content;
-    top: 60px;
-    left: 503px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.listed::before {
-    content: '';
     position: absolute;
-    inset: 0;
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    background: rgba(255, 255, 255, 0.30);
-    z-index: 0;
+    gap: 5px;
+    width: 200px;
+    top: 60px;
+    left: -600px;
+    padding: 20px;
     border-radius: 10px;
+    opacity: 0;
+    z-index: 2;
+    background: white;
 }
 
-.listed>* {
-    position: relative;
-    z-index: 5;
-    margin: 1px;
+.registerpanel2 {
+    display: grid;
+    position: absolute;
+    gap: 5px;
+    width: 200px;
+    top: 60px;
+    left: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 2;
+    background: white;
+}
+
+.rpclose {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 0;
 }
